@@ -295,18 +295,20 @@ header .mega-menu .links li a i {
 /* Start Landing  */
 .landing { 
     position: relative;
+    overflow: hidden;
 }
 .landing::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: -40px;
-    width: 100%;
+    left: -306px;
+    top: -311px;
+    width: 200%;
     height: 100%;
     background-color: #ececec;
     z-index: -1;
-    transform: skewY(-6deg);
-    transform-origin: top left;  
+    transform: skew(0, 10deg);
+    transform-origin: top left;
+    border-radius: 50%;
 }
 .landing .container {
     min-height: calc(100vh - 72px);
